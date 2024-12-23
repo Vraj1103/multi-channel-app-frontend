@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Channel Chat</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h3>Channels</h3>
+        <ul>
+          <li onclick="switchChannel('slack')">Slack</li>
+          <li onclick="switchChannel('whatsapp')">WhatsApp</li>
+          <li onclick="switchChannel('sms')">SMS</li>
+        </ul>
+      </div>
+
+      <!-- Chat Area -->
+      <div class="chat-container">
+        <div class="chat-area" id="chat-area">
+          <h2 id="channel-title">Slack Chat</h2>
+          <div id="messages"></div>
+        </div>
+
+        <!-- Input Box -->
+        <div class="input-box">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a message..."
+          />
+          <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
