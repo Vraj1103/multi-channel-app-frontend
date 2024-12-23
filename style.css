@@ -127,7 +127,7 @@ body {
   /* background: linear-gradient(135deg, #1384c5, #fe6d00) border-box; */
   background: #f4f4f4;
   color: #070707;
-
+  min-width: 100px;
   --_p: 0;
   border-bottom-left-radius: 0 0;
   place-self: start;
@@ -150,7 +150,7 @@ body {
   /* background: linear-gradient(135deg, #fe6d00, #1384c5) border-box; */
   background: #302d2d;
   color: #fff;
-
+  min-width: 100px;
   --_p: 100%;
   border-bottom-right-radius: 0 0;
   place-self: end;
